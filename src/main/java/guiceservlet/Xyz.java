@@ -26,7 +26,7 @@ public class Xyz extends HttpServlet {
 		response.getWriter().append("Served at: ").append(req.getContextPath());
 		
 		
-		req.getRequestDispatcher("checkout").forward(req, response);
+		req.getRequestDispatcher("/checkout").forward(req, response);
 	}
 
 
