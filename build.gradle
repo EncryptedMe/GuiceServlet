@@ -1,0 +1,21 @@
+apply plugin: 'war'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories{
+	jcenter()
+}
+dependencies{
+	// https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+	providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+	
+	// https://mvnrepository.com/artifact/com.google.inject/guice
+	compile group: 'com.google.inject', name: 'guice', version: '4.2.2'
+	
+	// https://mvnrepository.com/artifact/com.google.inject.extensions/guice-servlet
+	compile group: 'com.google.inject.extensions', name: 'guice-servlet', version: '4.2.2'
+	
+
+	
+
+}
